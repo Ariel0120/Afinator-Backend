@@ -10,7 +10,6 @@ app.add_middleware(
     allow_origins=["*"],
     allow_methods=["POST"],
 )
- 
 @app.post("/afinar")
 async def afinar_voz(audio: UploadFile = File(...)):
     try:
